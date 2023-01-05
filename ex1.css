@@ -1,0 +1,438 @@
+*{
+    box-sizing: border-box;
+}
+body{
+
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+.topnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: whitesmoke;
+    color: #000;
+    border-bottom: 2px solid silver;
+}
+.navbar{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+    color: #000;
+}
+.brand0{
+    font-size: 2rem;
+    margin: .5rem;
+    color: gray;
+}
+.brand{
+    font-size: 2rem;
+    margin: .5rem;
+}
+.nav-menu{
+    padding: 0;
+    padding: 0;
+    display: none;
+}
+.nav-menu0{
+    padding: 0;
+    padding: 0;
+    display: flex;
+}
+.nav-menu li,
+.nav-menu0 li{
+    list-style: none;
+    transform: none
+}
+.nav-menu li A,
+.nav-menu0 li A{
+    font-size: 18px;
+    text-decoration: none;
+    color: darkcyan;
+    padding: 20px;
+    display: block;
+    transform: none
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    
+}
+.ma a{
+    color: red;
+}
+.nav-menu0 li:hover{
+    margin-top: 20px;
+    box-shadow: inset 100px 0 0 0 orangered;
+    height: 40px;
+    width: fit-content;
+    border-bottom: 2px solid silver;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+ .nav-menu li:hover{
+    margin-top: 20px;
+    background-color: whitesmoke;
+    height: 50px;
+    border-radius: 15px;
+    transform: scale(1.1);
+}
+.hamburger{
+    display: none;
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+.hamburger .bar{
+    display:block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #000;
+}
+.nav-menu i{
+   position: absolute;
+   left: 23px;
+   margin-top: 17px;
+   color: blue;
+
+}
+.container{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: scroll;
+    padding:0 24px;
+    margin:auto;
+    width: 70%;
+    height: 450px;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 20px;
+    gap: 6px;
+    border: 2px solid whitesmoke;
+    border-radius: 50px;
+    background-color: silver;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 720px;
+    height: 100px;
+    margin: 20px;
+}
+.cards p1{
+    font-size: 24px;
+    color: #fff;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom: 2px solid #000;
+    box-shadow: inset 0 0 0 0 seashell;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .2s ease-in-out;
+}
+.cards p1:hover{
+    box-shadow: inset 150px 0 0 0 #000;
+    color: #fff;
+}
+.cards .content{
+    margin: 5px;
+    position: absolute;
+    margin: 10px;
+    height: 252px;
+}
+.card1, .card2, .card3, .card4, .card5,
+.card6{
+    width:150px;
+    height: 227px;
+    flex: 0 0 50%;
+    margin: 15px 0  5px ;
+    padding: 5px;
+    border-radius: 8px;
+    scroll-snap-align: start;
+}
+.card1 img, .card2 img, .card3 img, .card4 img, .card5 img,
+.card6 img {
+    background-size: contain;
+    width: 180px;
+    height: 250px;
+    margin: 0px;
+    padding: 0px;
+}
+h1, h2, h3, h4, h5,
+h6{
+    padding-top: 0;
+    margin-top: 10px;
+    font-size: 22px;
+    text-align: center;
+    border: 2px solid whitesmoke;  
+    color: #000;
+}
+.info{
+   border: 2px solid whitesmoke;
+}
+.info p{
+    display: inline-block;
+    margin: 10px 20px;
+    color: #000;
+}
+
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+
+
+  
+@media (max-width:768px){
+    .hamburger{
+        display: block;
+        position: absolute;
+        top: 4.5%;
+        left: 97%;
+        transform: translate(-50%, -50%);
+    }
+    .hamburger.active .bar:nth-child(2){ 
+        opacity: 0;
+    }
+    .hamburger.active.bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }  
+    .hamburger.active.bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .brand{ 
+        position: absolute;
+        z-index: 0;
+        top: 4.3%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border:2px solid #000 ;
+        border-top: 1px solid palegreen;
+        border-bottom-left-radius: 13px;
+        border-left:2px solid #000 ;
+        border-right: 2px solid #000;
+        border-top-right-radius: 13px;
+    
+        
+    }
+    .navbar{
+        display: flex;
+        width: 100%;
+    }
+    .nav-menu{
+        display: block;
+        position: fixed;
+        left: -100%;
+        top:0;
+        flex-direction: column;
+        background-color: whitesmoke;
+        border-right:1px solid whitesmoke ;
+        width: 45%;
+        height:100%;
+        text-align: center;
+        transition: 0.3s;
+        padding:0;
+        z-index: 1;
+    }
+    li{
+        padding: 15px 0;
+        transform: none;
+    }
+    .nav-menu li:hover{
+        width: 95%;
+        height: 70px;
+        transform: scale(1.1);
+
+
+    }
+    .nav-menu.active{
+        left:0;
+    }
+    .topnav{
+        display: flex;
+        height: 16px;
+    }
+    .nav-menu0{
+        display: none;
+    }
+    .brand0{
+        display: none;
+    }
+    .ma i{
+        color: red;
+    }
+    .container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 99%;
+        height: 450px;
+        margin: auto;
+        z-index: 0;
+    }
+    .cards{
+        width: 320px;
+        height: 320px;
+    }
+    .card1, .card2, .card3, .card4, .card5,
+    .card6{
+    width:150px;
+    height: 272px;
+    flex: 0 0 100%;
+    margin: 15px 0  5px ;
+    padding: 5px;
+    border-radius: 8px;
+    scroll-snap-align: start;
+} 
+    .info1 {
+    border: 2px solid whitesmoke;
+ }
+ .info1 p{
+    padding-top: 2px;
+    margin: 10px 20px;
+    color: #000;
+ }
+
+{}
+{}
+{}
+{}
+}
+
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+    

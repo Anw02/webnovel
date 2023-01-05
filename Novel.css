@@ -1,0 +1,304 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100vh;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 60px;
+    background-color:palegreen;
+    z-index: 1;
+}
+.brand{
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-between;
+}
+.nav-menu ul{
+    padding: 0;
+    padding: 0;
+    display: flex;
+}
+.nav-menu li{
+    list-style: none;
+    margin-left: 40px;
+}
+.nav-menu li A{
+    font-size: 15px;
+    text-decoration: none;
+    color: #000;
+    padding: 1rem;
+    display: block;
+    transition: 0.5s ease;
+}
+.nav-menu li:hover{
+    background-color: gold;
+}
+.toggle-button{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display:block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+}
+    
+.container{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: scroll;
+    padding:0 24px;
+    margin:auto;
+    width: 70%;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 24px;
+    border-radius: 8px;
+    gap: 6px;
+    border: 2px solid whitesmoke;
+    border-radius: 70px;
+    background-color: lightseagreen;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 720px;
+    height: 352px;
+    margin: 20px;
+}
+.cards p1{
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    scroll-snap-align: start;
+    
+}
+.cards .content{
+    margin: 5px;
+    border: 2px solid lightseagreen;
+    border-radius: 15px;
+    position: absolute;
+    margin: 10px;
+    height: 272px;
+}
+.card1, .card2, .card3, .card4, .card5,
+ .card6{
+    width:150px;
+    height: 272px;
+    flex: 0 0 50%;
+    margin: 15px 0  5px ;
+    padding: 5px;
+    border-radius: 8px;
+    scroll-snap-align: start;
+}
+.card1 img, .card2 img, .card3 img, .card4 img, .card5 img,
+.card6 img {
+    object-fit: cover;
+    width: 180px;
+    height: 200px;
+    margin: 0px;
+    padding: 0px;
+    border-bottom: 1px solid green;
+    border-radius: 10px;
+}
+.card1 h1, h2, h3, h4, h5,
+h6{
+    padding-top: 8px;
+    font-size: 22px;
+    text-align: center;
+    border-bottom: 2px solid palegreen;
+    border-left: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+    border-radius: 10px;
+    color: #ffff;
+}
+.info{
+   border: 2px solid blue;
+   border-radius: 10px;
+}
+.info p{
+    display: inline-block;
+    margin: 0 20px;
+    color: #fff;
+}
+
+
+@media (max-width:768px){
+    .toggle-button{
+        display: block;
+    }
+    .toggle-button .active .bar:nth-child(2){ 
+        opacity: 0;
+}
+    .toggle-button .active.bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+}
+    .toggle-button .active.bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+}
+    .nav-menu 
+    .navbar{
+        flex-direction: column;
+        width:auto;
+    }
+    .brand{
+        display: none;
+        font-size: 2rem;
+        justify-content: center;
+    }
+    ul{
+        display: none;
+    }
+    .container{
+        width: 99%;
+        height: 350px;
+        margin: auto;
+        position: relative;
+        z-index: 0;
+    }
+    .cards{
+        width: 320px;
+        height: 320px;
+    }
+    .card1, .card2, .card3, .card4, .card5,
+    .card6{
+    width:150px;
+    height: 272px;
+    flex: 0 0 100%;
+    margin: 15px 0  5px ;
+    padding: 5px;
+    border-radius: 8px;
+    scroll-snap-align: start;
+}
+
+}
+}
+{}
+{}
+{}
+{}
+{}
+{}
+
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+.navbar{
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    height: 100vh;
+    background-color: palegreen;
+}
+.nav-menu{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    flex-direction: column;
+    background-color: palegreen;
+    width: 50%;
+    height:600px;
+    text-align: center;
+    transition: 0.3s;
+    padding: 10px 0;
+}
+.nav-menu li{
+    padding: 10px 0;
+}
+.nav-menu.active{
+    left:0;
+}
+
+}
+
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+}

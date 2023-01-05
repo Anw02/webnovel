@@ -1,0 +1,154 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  background-color: whitesmoke;
+}
+nav{
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background-color: red;
+  border-bottom: 1px solid orange;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul li {
+  display: flex;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+
+.card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 3px;
+}
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #4070f4;
+ 
+}
+margin: 40px 20px 20px 20px;
+margin: 40px 20px 0 20px ;
+.slide-container{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #EFEfEFEF;
+  max-width: 1120px;
+  width: 100%;
+  background-color: grey;
+}
+.card{
+  width: 320px;
+  border-radius: 25px;
+  background-color: #fff;
+}
+.slide-content{
+  margin: 0 40px;
+}
+.image-content, .card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.name{
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+.description{
+  font-size: 15px;
+  color: #707070;
+  text-align: center;
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  border-radius: 25px 25px 0 25px;
+  padding: 15px 0;
+}
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #4070f4;
+  border-radius: 25px 25px 0 25px;
+
+}
+.overlay::before,
+.overlay::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #4070f4;
+}
+.overlay::after{
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
+}
+.button{
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 8px 16px;
+  background-color: #4070f4;
+  border-radius: 5px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button:hover{
+  background:#265DF2;
+}
+
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
